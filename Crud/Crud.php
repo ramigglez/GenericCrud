@@ -2,10 +2,10 @@
 
 class Crud {
 
-    private string $table;
-    private PDO $connection;
-    private string $where;
-    private string $sql;
+    protected string $table;
+    protected PDO $connection;
+    protected string $where;
+    protected string $sql;
 
     public function __construct (string $table = null) {
         $this->where = '';
